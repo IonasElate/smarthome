@@ -234,8 +234,8 @@ Bridge mqtt:broker:myUnsecureBroker [ host="192.168.0.42", secure=false ]
 demo.items:
 
 ```xtend
-Switch Kitchen_Light "Kitchen Light" {channel="mqtt:mybroker:topic:mything:lamp" }
-Rollershutter shutter "Blind" {channel="mqtt:mybroker:topic:mything:blind" }
+Switch Kitchen_Light "Kitchen Light" {channel="mqtt:topic:mything:lamp" }
+Rollershutter shutter "Blind" {channel="mqtt:topic:mything:blind" }
 ```
 
 demo.rules:
